@@ -2,8 +2,8 @@
 
 namespace LanchesMac.TagHelpers
 {
-    public class EmailTagHelper : TagHelper 
-    { 
+    public class EmailTagHelper : TagHelper
+    {
         public string Endereco { get; set; }
         public string Conteudo { get; set; }
 
@@ -12,9 +12,6 @@ namespace LanchesMac.TagHelpers
             output.TagName = "a";
             output.Attributes.SetAttribute("href", "mailto:" + Endereco);
             output.Content.SetContent(Conteudo);
-
         }
-
     }
-  
 }
