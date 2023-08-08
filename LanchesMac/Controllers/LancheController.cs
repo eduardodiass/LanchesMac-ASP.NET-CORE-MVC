@@ -2,6 +2,7 @@
 using LanchesMac.Repositories.Interfaces;
 using LanchesMac.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace LanchesMac.Controllers
 {
@@ -41,8 +42,8 @@ namespace LanchesMac.Controllers
                  }*/
                 lanches = _lancheRepository.Lanches.Where(l => l.Categoria.CategoriaNome.Equals(categoria)).OrderBy(c => c.Nome);
             }
-                categoriaAtual = categoria;
-            
+            categoriaAtual = categoria;
+
 
             var lanchesListViewModel = new LancheListViewModel()
             {
@@ -52,5 +53,13 @@ namespace LanchesMac.Controllers
             return View(lanchesListViewModel);
 
         }
+
+        public IActionResult Details(int lancheId)
+        {
+            var lanche = _lancheRepository.Lanches.FirstOrDefault(l=>l.LancheId == lancheId);
+            return View(lanche);
+        }
+
     }
-}
+    }
+    
