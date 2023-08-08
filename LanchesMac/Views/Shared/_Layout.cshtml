@@ -26,8 +26,11 @@
                             <a class="nav-link text-light" asp-area="" asp-controller="Contato" asp-action="Index">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Lanche" asp-action="List">Lanches</a>
+                            @* <a class="nav-link text-light" asp-area="" asp-controller="Lanche" asp-action="List">Lanches</a>*@
+                            @await Component.InvokeAsync("CategoriaMenu")
+
                         </li>
+
                         <li>
                             @await Component.InvokeAsync("CarrinhoCompraResumo")
                         </li>
