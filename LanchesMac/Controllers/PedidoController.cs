@@ -42,12 +42,12 @@ namespace LanchesMac.Controllers
             foreach(var item in itens)
             {
                 totalItensPedido += item.Quantidade;
-                precoTotalPedido += item.Lanche.Preco * item.Quantidade;
+                precoTotalPedido += (item.Lanche.Preco * item.Quantidade);
             }
-
+            //atribui os valores obitidos ao pedido
             pedido.TotalItensPedido = totalItensPedido;
             pedido.PedidoTotal = precoTotalPedido;
-
+            //valida os valores obitidos ao pedido
             if(ModelState.IsValid)
             {
                 //cria o pedido e os detalhes
@@ -61,7 +61,7 @@ namespace LanchesMac.Controllers
                 _carrinhoCompra.LimparCarrinho();
 
                 //exibe a view com dados do cliente e do pedido
-                return View("~/View/Pedido/CheckoutCompleto.cshtml", pedido);
+                return View("~/Views/Pedido/CheckoutCompleto.cshtml", pedido);
 
             }
 
