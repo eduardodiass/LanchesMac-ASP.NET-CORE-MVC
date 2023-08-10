@@ -8,13 +8,9 @@
 
   <ItemGroup>
     <Compile Remove="NovaPasta1\**" />
-    <Compile Remove="NovaPasta\**" />
     <Content Remove="NovaPasta1\**" />
-    <Content Remove="NovaPasta\**" />
     <EmbeddedResource Remove="NovaPasta1\**" />
-    <EmbeddedResource Remove="NovaPasta\**" />
     <None Remove="NovaPasta1\**" />
-    <None Remove="NovaPasta\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,7 +20,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.18" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.21" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.18">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
