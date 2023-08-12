@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark  border-bottom box-shadow mb-3" style="background-color:#8B0000">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">LanchesMac</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -31,7 +31,7 @@
                       <input trype="text" class="form-control" placeholder="Procurar lanche" name="searchString" value="@ViewData["searchString"]" />
                       </div>
                     </form>
-                    @await Html.PartialAsync("_LoginPartial");
+                    @await Html.PartialAsync("_LoginPartial")
                     @if (User.IsInRole("Admin"))
                     {
                         <a class="nav-link text-light" asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin</a>
