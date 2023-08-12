@@ -10,6 +10,8 @@
 <body>
     <header>
        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark  border-bottom box-shadow mb-3" style="background-color:#8B0000">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/lanchemac2.png" width="100" heght="100" />LanchesMac</a>
+
             <div class="container">
                 <a class="navbar-brand" asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin</a>
                 <div class="navbar-collapse collapse d-sm-inline-flex">
@@ -40,11 +42,9 @@
             @RenderBody()
         </main>
     </div>
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            <p><a target="_blank" href="">&copy; 2023- Eduardo Rodrigues</a></p>
-        </div>
-    </footer>
+
+    <partial name="_Footer" />
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
