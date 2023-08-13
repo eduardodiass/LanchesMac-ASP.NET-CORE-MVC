@@ -32,22 +32,22 @@ As tecnologias utilizadas foram:
 
  ### 📊 Algumas imagens do projeto.📊
 * Pagina Inicial
-<div align="center">
+<div align="left">
 <img src="https://github.com/eduardodiass/LanchesMac-ASP.NET-CORE-MVC/assets/72114455/20a5cc92-014b-47f7-b720-230b37b680d6"/ width="600px">
 </div>
 
 * Pagina de login
-<div align="center">
+<div align="left">
 <img src="https://github.com/eduardodiass/LanchesMac-ASP.NET-CORE-MVC/assets/72114455/4003861c-2776-4337-8321-2cf70cc8c292"/ width="600px">
 </div>
 
 * Pagina de Página Administratica no relatório de vendas
-<div align="center">
+<div align="left">
 <img src="https://github.com/eduardodiass/LanchesMac-ASP.NET-CORE-MVC/assets/72114455/66fac909-a0cb-4e58-8039-9b4a63012b37"/ width="600px">
 </div>
 
 * Pagina de Página Administratica no grafico de vendas
-<div align="center">
+<div align="left">
 <img src="https://github.com/eduardodiass/LanchesMac-ASP.NET-CORE-MVC/assets/72114455/73989937-c00d-4a66-ba65-42be6dd338f8"/ width="600px">
 </div>
 
